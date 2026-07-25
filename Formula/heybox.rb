@@ -5,21 +5,21 @@
 class Heybox < Formula
   desc "Read-only CLI for searching the Heybox community"
   homepage "https://github.com/shadowfish07/heybox-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.1/heybox_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "4d76794535b316d78d8e9fe790aa1a7cced17474a8d3959d5345279960b5edda"
+      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.2/heybox_0.2.2_Darwin_x86_64.tar.gz"
+      sha256 "444924ea20aa49c294b27e4b4d84b1f52c5998723be1f5a210e7918bf2309f5f"
 
       define_method(:install) do
         bin.install "heybox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.1/heybox_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "96edc24d979aa5327927ffa9f1714c734927e9a6537ec79ab886a956f5d986da"
+      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.2/heybox_0.2.2_Darwin_arm64.tar.gz"
+      sha256 "08935435bdcde61022b8823033c6f0f43595f8b19e8ee789d76b2d9be174232e"
 
       define_method(:install) do
         bin.install "heybox"
@@ -29,15 +29,15 @@ class Heybox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.1/heybox_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "4ace4571a4d84d0f97a72d8aebe570c1712fdbfb01acfed667168bb5e669b222"
+      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.2/heybox_0.2.2_Linux_x86_64.tar.gz"
+      sha256 "e1c209ced3239d45e2963c0601e8a060164a9b453f5dc834841b560d71afb373"
       define_method(:install) do
         bin.install "heybox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.1/heybox_0.2.1_Linux_arm64.tar.gz"
-      sha256 "7c8161f24f8e2b581262c3f5cabfb3ff4d5ca8d87c2986f474bc4889c6682ef5"
+      url "https://github.com/shadowfish07/heybox-cli/releases/download/v0.2.2/heybox_0.2.2_Linux_arm64.tar.gz"
+      sha256 "d3c3479aff266cb75bdab168c5a2e82956f9716f1e78aeb6712b892b91beb5fa"
       define_method(:install) do
         bin.install "heybox"
       end
